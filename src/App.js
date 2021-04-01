@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import axios from "axios";
+import bootstrap from "react-bootstrap";
+import Navy from "./Components/NavBar/NavBar.jsx";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./Components/Home/Home.jsx";
+import Meme from "./Components/Meme/Meme.jsx";
+import Crypto from "./Components/Crypto/Crypto.jsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navy />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/meme" component={Meme} />
+          <Route exact path="/crypto" component={Crypto} />
+        </Switch>
+      </Router>
     </div>
   );
 }
