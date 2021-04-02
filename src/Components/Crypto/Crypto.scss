@@ -1,0 +1,23 @@
+#crypto__box {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem 2rem;
+  border: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.crypto__img {
+  width: 16rem;
+  border-radius: 50px;
+}
+#crypto__box--text {
+  width: 15rem;
+}
+
+.page {
+  padding: 1rem;
+}
+
+.card-body {
+  flex: none;
+}
