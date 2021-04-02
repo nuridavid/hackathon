@@ -1,0 +1,36 @@
+#crypto__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5rem 2rem;
+  border: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.crypto__img {
+  width: 16rem;
+  border-radius: 50px;
+}
+
+#crypto__box--text {
+  width: 15rem;
+}
+
+.page {
+  padding: 1rem;
+}
+
+.card-body {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+/*# sourceMappingURL=Crypto.css.map */
